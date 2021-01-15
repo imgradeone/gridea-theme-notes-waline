@@ -1,0 +1,20 @@
+<script type="application/javascript" src="https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js"></script>
+<script type="application/javascript">
+  new Waline({
+    el: '#waline',
+    path: location.pathname,
+    serverURL: 'https://admin.imgradeone.com',
+    // appId: '<%= site.customConfig.walineAppId %>',
+    // appKey: '<%= site.customConfig.walineAppKey %>',
+    pageSize: <%= site.customConfig.walinePageSize %>,
+    // notify: <%= site.customConfig.walineNotify %>,
+    avatar: '<%= site.customConfig.walineAvatar %>',
+    // verify: <%= site.customConfig.walineVerify %>,
+    placeholder: '<%= site.customConfig.walinePlaceholder %>',
+    // visitor: <%= site.customConfig.walineVisitor %>,
+    highlight: <%= site.customConfig.walineHighlight %>,
+    requiredFields: ['nick','mail'],
+    visitor: true,
+    // recordIP: <%= site.customConfig.walineRecordIp %>,
+  })
+</script>
