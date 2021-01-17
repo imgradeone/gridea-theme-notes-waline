@@ -1,8 +1,8 @@
 {
-  "name": "Notes",
-  "version": "1.2.0",
-  "author": "EryouHao",
-  "repository": "https://github.com/getgridea/gridea-theme-notes",
+  "name": "Notes (Waline)",
+  "version": "1.2.0w1",
+  "author": "EryouHao and imgradeone",
+  "repository": "https://github.com/imgradeone/gridea-theme-notes-waline",
   "customConfig": [
     {
       "name": "contentMaxWidth",
@@ -152,6 +152,153 @@
       "value": "",
       "type": "input",
       "note": "链接地址"
+    },
+    {
+      "name": "openWaline",
+      "label": "是否开启",
+      "group": "Waline 评论",
+      "value": false,
+      "type": "switch",
+      "note": "设置文档： https://waline.js.org/"
+    },
+    {
+      "name": "walineServerURL",
+      "label": "服务端地址",
+      "group": "Waline 评论",
+      "value": "",
+      "type": "input",
+      "note": "将 Waline 部署到 Vercel 等服务时的服务端地址"
+    },
+    {
+      "name": "walineAnonymous",
+      "label": "登录评论相关设置",
+      "group": "Waline 评论",
+      "value": "",
+      "type": "radio",
+      "options": [
+        {
+          "label": "同时允许匿名 / 登录评论",
+          "value": ""
+        },
+        {
+          "label": "仅允许匿名评论",
+          "value": "true"
+        },
+        {
+          "label": "仅允许登录评论",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "name": "walineNotify",
+      "label": "Notify",
+      "group": "Waline 评论",
+      "value": false,
+      "type": "switch",
+      "note": "评论回复邮件提醒"
+    },
+    {
+      "name": "walinePageSize",
+      "label": "每页条数",
+      "group": "Waline 评论",
+      "value": 10,
+      "type": "input",
+      "note": "评论列表分页，每页条数"
+    },
+    {
+      "name": "walineAvatar",
+      "label": "默认头像类型",
+      "group": "Waline 评论",
+      "value": "mp",
+      "type": "input",
+    },
+    {
+      "name": "walineAvatar",
+      "label": "默认头像类型",
+      "group": "Waline 评论",
+      "type": "select",
+      "options": [
+        {
+          "label": "Gravatar Logo",
+          "value": ""
+        },
+        {
+          "label": "灰白人头",
+          "value": "mp"
+        },
+        {
+          "label": "抽象几何图形",
+          "value": "identicon"
+        },
+        {
+          "label": "小怪物",
+          "value": "monsterid"
+        },
+        {
+          "label": "随机面孔风格",
+          "value": "wavatar"
+        },
+        {
+          "label": "GitHub 风格 / 像素风",
+          "value": "retro"
+        },
+        {
+          "label": "机器人",
+          "value": "robohash"
+        },
+        {
+          "label": "不展示头像",
+          "value": "hide"
+        }
+      ]    
+    },
+    {
+      "name": "walineVisitor",
+      "label": "访问量统计",
+      "group": "Waline 评论",
+      "value": false,
+      "type": "switch",
+      "note": "文章访问量统计（暂时不显示至文章页面）"
+    },
+    {
+      "name": "walineHighlight",
+      "label": "代码高亮",
+      "group": "Waline 评论",
+      "value": true,
+      "type": "switch",
+    },
+    {
+      "name": "walinePlaceholder",
+      "label": "占位提示符",
+      "group": "Waline 评论",
+      "value": "来都来了，不妨评论一下",
+      "type": "input",
+    },
+    {
+      "name": "walineLang",
+      "label": "Waline 语言",
+      "group": "Waline 评论",
+      "value": "zh-CN",
+      "type": "select",
+      "options": [
+        {
+          "label": "zh-cn",
+          "value": "zh-cn"
+        },
+        {
+          "label": "zh-tw",
+          "value": "zh-tw"
+        },
+        {
+          "label": "en",
+          "value": "en"
+        },
+        {
+          "label": "jp",
+          "value": "jp"
+        }
+      ]    
     },
     {
       "name": "customCss",
