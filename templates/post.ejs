@@ -109,7 +109,9 @@
           }
         });
       });
-
     </script>
+    <% if (site.customConfig.openWaline) { %>
+      <%- include('./includes/waline') %>
+    <% } %>
   </body>
 </html>

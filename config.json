@@ -1,5 +1,5 @@
 {
-  "name": "Notes (Waline)",
+  "name": "NotesWaline",
   "version": "1.2.0w1",
   "author": "EryouHao and imgradeone",
   "repository": "https://github.com/imgradeone/gridea-theme-notes-waline",
@@ -210,13 +210,6 @@
       "name": "walineAvatar",
       "label": "默认头像类型",
       "group": "Waline 评论",
-      "value": "mp",
-      "type": "input",
-    },
-    {
-      "name": "walineAvatar",
-      "label": "默认头像类型",
-      "group": "Waline 评论",
       "type": "select",
       "options": [
         {
@@ -266,14 +259,14 @@
       "label": "代码高亮",
       "group": "Waline 评论",
       "value": true,
-      "type": "switch",
+      "type": "switch"
     },
     {
       "name": "walinePlaceholder",
       "label": "占位提示符",
       "group": "Waline 评论",
       "value": "来都来了，不妨评论一下",
-      "type": "input",
+      "type": "input"
     },
     {
       "name": "walineLang",
